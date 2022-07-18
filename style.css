@@ -22,7 +22,8 @@ nav {
   box-sizing: border-box;
   padding: 0 80px;
   background-color: black;
-  height: 60px;
+  height: 6vh;
+  min-height: 50px;
 }
 
 #link-logo {
@@ -679,11 +680,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 83vh;
+  margin-top: 80vh;
   margin-left: 80vw;
   padding: 10px;
   border-radius: 50%;
-  transition: all .5s;
+  transition: .5s;
 }
 
 .up:hover {
@@ -722,6 +723,11 @@ footer p span {
 
 
 @media screen and (max-width: 930px) {
+  body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
   header {
     width: 100vw;
     z-index: 2;
@@ -955,8 +961,9 @@ footer p span {
 
 @media screen and (max-width: 850px) {
   body {
-    overflow-x: hidden;
-  }
+	background-color: #ffffff;
+  overflow-x: hidden;
+}
 
  .nav-list {
     position: absolute;
@@ -1193,12 +1200,12 @@ footer p span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 83vh;
+    margin-top: 80vh;
     margin-left: 80vw;
     padding: 10px;
     border-radius: 50%;
     background-color: #0080FF;
-    transition: all .5s;
+    transition: .5s;
   }
   
   .up a {
