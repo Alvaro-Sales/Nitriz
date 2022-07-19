@@ -20,6 +20,8 @@ nav {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #262626;
+  box-sizing: border-box;
+  padding: 0 80px;
   height: 6vh;
   min-height: 50px;
 }
@@ -71,7 +73,7 @@ nav a:hover {
 }
 
 main {
-  padding-top: 60px;
+  padding-top: 6vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -704,10 +706,12 @@ footer p span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #262626;
     box-sizing: border-box;
-    padding: 0 50px;
-    background-color: black;
+    padding: 0 60px;
     height: 6vh;
+    min-height: 50px;
   }
   
   nav a {
