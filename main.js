@@ -7,6 +7,7 @@ class MobileNavbar {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    //criando animação para o link, estilo link fade
     animateLinks() {
         this.navLinks.forEach((link, index) => {
             link.style.animation
@@ -15,16 +16,19 @@ class MobileNavbar {
         });
     }
 
+    //criando captura de click para abrir o menu
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
 
+    //criando captura de click no menu
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
+    //deixando o menu ativo
     init() {
         if (this.mobileMenu) {
             this.addClickEvent();
@@ -42,9 +46,23 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 
+//criando função para barra de progresso animado
 let progress = document.getElementById('progressBar')
 let totalHeight = document.body.scrollHeight - window.innerHeight
 window.onscroll = function() {
   let progressHeight = (window.pageYOffset / totalHeight) * 100
   progress.style.height = progressHeight + '%'
+}
+
+//Criando função para mudar de tema claro para escuro
+var icon = document.getElementById("icon")
+
+icon.onclick = function() {
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")) {
+        icon.src = "./imagens/sol.png"
+    }
+    else{
+        icon.src = "./imagens/lua.png"
+    }
 }
