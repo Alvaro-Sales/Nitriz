@@ -5,17 +5,17 @@
 }
 
 :root {
-  --cor-1: #FFFFFF;
+  --cor-1: #ffffff;
   --cor-2: #000000;
   --cor-hover: #008aff;
-  --shadow-black: #1818184d;
-  --shadow-black-2: #a8a8a860;
+  --shadow-black: rgba(24, 24, 24, 0.302);
+  --shadow-black-2: rgba(168, 168, 168, 0.376);
 }
 .dark-theme {
   --cor-1: #222222;
-  --cor-2: #FFFFFF;
-  --shadow-black: #1818184d;
-  --shadow-black-2: #13131360;
+  --cor-2: #ffffff;
+  --shadow-black: rgba(24, 24, 24, 0.302);
+  --shadow-black-2: rgba(19, 19, 19, 0.376);
 }
 
 html {
@@ -110,8 +110,8 @@ nav {
 
 .logo {
   width: 120px;
-  height: 50px;
-  margin: 8px 0 0;
+  height: 49px;
+  margin: 0;
 }
 
 .nav-list {
@@ -172,6 +172,7 @@ main {
   height: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-size: cover;
   background-position: top;
@@ -197,7 +198,11 @@ main {
   font-weight: normal;
   padding: 30px 0 0;
   font-size: 35px;
-  margin: 400px 0 0 0;
+  margin: 250px 0 0 0;
+}
+
+.bem-vindo span {
+    color: #0080ff;
 }
 
 .copyright {
@@ -870,8 +875,8 @@ footer {
 
 footer p {
   color: var(--cor-2);
-  padding: 5px 0;
-  font-size: 14px;
+  padding: 5px 10px;
+  font-size: 16px;
 }
 
 
@@ -1217,7 +1222,7 @@ footer p {
     font-weight: normal;
     padding: 30px 0 0;
     font-size: 35px;
-    margin: 400px 0 0 0;
+    margin: 300px 0 0 0;
   }
   
   .copyright {
@@ -1404,23 +1409,6 @@ footer p {
     font-weight: normal;
     font-size: 26px;
   }
-  
-  footer {
-    max-width: 100%;
-    font-size: .8em;
-    text-align: center;
-    background-color: var(--cor-1);
-  }
-  
-  footer p {
-    color: var(--cor-2);
-    padding: 5px 0;
-  }
-  
-  footer p span {
-    color: #2CA2ED;
-  }
-  
 }
 
 
@@ -2439,7 +2427,7 @@ footer p {
     font-weight: normal;
     padding: 30px 0 0;
     font-size: 30px;
-    margin: 400px 0 0 0;
+    margin: 300px 0 0 0;
   }
   
   .copyright {
