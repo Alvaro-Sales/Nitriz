@@ -180,7 +180,7 @@ main {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url(/imagens/bg-top.jpg);
+  background-image: url(./imagens/bg-top.jpg);
 }
 
 #text-top {
@@ -1204,7 +1204,7 @@ footer p {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-image: url(/imagens/bg-top.jpg);
+    background-image: url(./imagens/bg-top.jpg);
   }
   
   #text-top {
@@ -2409,7 +2409,7 @@ footer p {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-image: url(/imagens/bg-top.jpg);
+    background-image: url(./imagens/bg-top.jpg);
   }
   
   #text-top {
