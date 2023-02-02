@@ -482,7 +482,7 @@ footer p {
         position: absolute;
         top: 6vh;
         right: 0;
-        width: 50vw;
+        width: 70vw;
         height: 94vh;
         background-color: var(--cor-2);
         flex-direction: column;
